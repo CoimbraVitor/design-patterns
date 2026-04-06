@@ -24,7 +24,7 @@ class SingletonTest {
 
     @Test
     void shouldNotOverrideValueOnSubsequentCalls() {
-        Singleton instance1 = Singleton.getInstance("initial");
+        Singleton.getInstance("initial");
         Singleton instance2 = Singleton.getInstance("new");
 
         assertNotEquals("new", instance2.value);
